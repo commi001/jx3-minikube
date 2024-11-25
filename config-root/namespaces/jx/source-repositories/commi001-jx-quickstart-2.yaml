@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: commi001
+    provider: github
+    repository: jx-quickstart-2
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: commi001-jx-quickstart-2
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/commi001/jx_quickstart_2.git
+  org: commi001
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx_quickstart_2
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/commi001/jx_quickstart_2
